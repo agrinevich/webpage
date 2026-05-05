@@ -1,0 +1,27 @@
+<p style="color:#FF0000;">
+[% msg %]
+</p>
+
+<p>
+File: "[% path %]/[% filename %]"
+</p>
+
+<form action="/cgi-bin/admin/page.cgi" method="POST">
+<input type="hidden" name="do" value="update">
+<input type="hidden" name="p" value="[% path %]">
+<input type="hidden" name="f" value="[% filename %]">
+
+<textarea name="html_code" rows="36">
+[% html_code %]
+</textarea>
+<input type="submit" value="Save">
+</form>
+<br>
+
+<form action="/cgi-bin/admin/page.cgi" method="POST">
+<input type="hidden" name="do" value="delete-file">
+<input type="hidden" name="p" value="[% path %]">
+<input type="hidden" name="f" value="[% filename %]">
+<input type="submit" value="Delete File" onclick="return confirm('Are you sure?');">
+</form>
+

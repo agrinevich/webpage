@@ -1,0 +1,30 @@
+<p>
+
+<form action="/cgi-bin/admin/page.cgi" method="POST">
+<input type="hidden" name="do" value="create-file">
+<input type="hidden" name="p" value="[% path %]">
+<input type="text" name="name" value="">
+<input type="submit" value="Create File">
+</form>
+<br>
+
+<form action="/cgi-bin/admin/page.cgi" method="POST">
+<input type="hidden" name="do" value="create-dir">
+<input type="hidden" name="p" value="[% path %]">
+<input type="text" name="name" value="">
+<input type="submit" value="Create Directory">
+</form>
+<br>
+
+</p>
+
+<p>
+<form action="/cgi-bin/admin/page.cgi" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="do" value="upload-file">
+<input type="hidden" name="p" value="[% path %]">
+<input type="file" name="file"><br>
+<input type="submit" value="Upload File">
+</form>
+</p>
+
+

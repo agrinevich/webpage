@@ -1,0 +1,13 @@
+<p style="color:#FF0000;">
+[% msg %]
+</p>
+
+<p>
+Path: "[% path %]"
+</p>
+
+<form action="/cgi-bin/admin/page.cgi" method="POST">
+<input type="hidden" name="do" value="delete-dir">
+<input type="hidden" name="p" value="[% path %]">
+<input type="submit" value="Delete Directory" onclick="return confirm('Are you sure?');">
+</form>

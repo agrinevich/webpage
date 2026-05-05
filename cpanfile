@@ -1,0 +1,9 @@
+requires 'Archive::Zip';
+requires 'CGI';
+requires 'Config::Tiny';
+requires 'File::Copy::Recursive';
+requires 'Moo';
+requires 'Number::Bytes::Human';
+requires 'Path::Tiny';
+requires 'Test::Compile';
+requires 'Text::Xslate';

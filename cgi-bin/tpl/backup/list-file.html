@@ -1,0 +1,13 @@
+<tr>
+<td>[<a href="/cgi-bin/admin/backup.cgi?do=del&name=[% name %]" style="color:#FF0000;" onclick="return confirm('Are you sure?');">X</a>]</td>
+<td><a href="/cgi-bin/admin/backup.cgi?do=download&name=[% name %]">[% name %]</a></td>
+<td>[% size %]</td>
+<td>
+<form action="/cgi-bin/admin/backup.cgi" method="POST">
+<input type="hidden" name="do" value="restore">
+<input type="hidden" name="name" value="[% name %]">
+<input type="submit" value="Restore">
+</form>
+</td>
+</tr>
+

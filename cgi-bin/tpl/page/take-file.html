@@ -1,0 +1,25 @@
+<p style="color:#FF0000;">
+[% msg %]
+</p>
+
+<p>
+File: <a href="[% path %]/[% filename %]" target="_blank">[% path %]/[% filename %]</a>
+</p>
+
+<!--
+<form action="/cgi-bin/admin/page.cgi" method="GET">
+<input type="hidden" name="do" value="download-file">
+<input type="hidden" name="p" value="[% path %]">
+<input type="hidden" name="f" value="[% filename %]">
+<input type="submit" value="Download File">
+</form>
+<br>
+-->
+
+<form action="/cgi-bin/admin/page.cgi" method="GET">
+<input type="hidden" name="do" value="delete-file">
+<input type="hidden" name="p" value="[% path %]">
+<input type="hidden" name="f" value="[% filename %]">
+<input type="submit" value="Delete File" onclick="return confirm('Are you sure?');">
+</form>
+

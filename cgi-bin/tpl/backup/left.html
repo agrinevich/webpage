@@ -1,0 +1,15 @@
+<p>
+<form action="/cgi-bin/admin/backup.cgi" method="GET">
+<input type="hidden" name="do" value="create">
+<input type="submit" value="Create Backup">
+</form>
+</p>
+
+<p>
+<form action="/cgi-bin/admin/backup.cgi" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="do" value="upload">
+<input type="file" name="file"><br>
+<input type="submit" value="Upload Backup">
+</form>
+</p>
+
