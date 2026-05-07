@@ -248,7 +248,7 @@ sub create_file {
         print $q->redirect( $BASE_URL . "?do=go&p=$path&msg=filename-required" );
         exit();
     }
-    elsif ( $filename =~ /\W/ ) {
+    elsif ( $filename =~ /[^\w\-\.]/ ) {
         print $q->redirect( $BASE_URL . "?do=go&p=$path&msg=english-letters-and-digits" );
         exit();
     }
@@ -328,7 +328,7 @@ sub create_dir {
         print $q->redirect( $BASE_URL . "?do=go&p=$path&msg=dirname-required" );
         exit();
     }
-    elsif ( $dirname =~ /\W/ ) {
+    elsif ( $dirname =~ /[^\w\-]/ ) {
         print $q->redirect( $BASE_URL . "?do=go&p=$path&msg=english-letters-and-digits" );
         exit();
     }
