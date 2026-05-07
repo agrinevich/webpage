@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 
+use local::lib;
 use CGI;
 use FindBin qw($Bin);
 use Carp    qw(carp croak);

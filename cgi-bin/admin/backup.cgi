@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 
+use local::lib;
 use POSIX   ();
 use POSIX   qw(strftime);
 use Carp    qw(carp croak);

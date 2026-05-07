@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use utf8;
 
+use local::lib;
 use English qw( -no_match_vars );
 use Carp    qw( croak );
 use Path::Tiny;
