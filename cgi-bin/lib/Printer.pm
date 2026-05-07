@@ -3,6 +3,7 @@ package Printer;
 use strict;
 use warnings;
 
+use local::lib;
 use Text::Xslate qw(mark_raw html_escape);
 use Moo;
 use namespace::clean;
