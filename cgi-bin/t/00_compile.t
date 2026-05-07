@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 
+use local::lib;
 use Test::Compile;
 use FindBin qw($Bin);
 use lib "$Bin/../lib";
