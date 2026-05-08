@@ -150,6 +150,9 @@ sub go {
     my ( $a_dirs, $a_files ) = Utils::read_dir( dir => $cur_dir );
 
     foreach my $name ( sort @{$a_dirs} ) {
+        next if $name eq 'cgi-bin';
+        next if $name eq 'bin';
+
         $list .= $p->do_render(
             tpl_file => 'page/list-dir.html',
             escape   => 0,
@@ -162,6 +165,8 @@ sub go {
 
     my $active = q{};
     foreach my $name ( sort @{$a_files} ) {
+        next if $name eq '.htaccess';
+
         if   ( $name eq $filename ) { $active = ' class="active"'; }
         else                        { $active = q{}; }
         $list .= $p->do_render(
