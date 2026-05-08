@@ -1,8 +1,8 @@
 [site]
-html_path = /public_html
+html_dir = /var/www/pathto/webpage.org.ua/
 
 [backup]
-path = /bkp
+dir = /var/www/pathto/bkp
 max_size_mb = 100
 dont_upload = exe,sh
 
