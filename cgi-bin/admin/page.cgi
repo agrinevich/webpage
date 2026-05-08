@@ -25,7 +25,7 @@ my $SCRIPT   = $ENV{SCRIPT_NAME};
 my $SCHEME   = $ENV{REQUEST_SCHEME};
 my $HOST     = $ENV{HTTP_HOST};
 my $BASE_URL = $SCHEME . '://' . $HOST . $SCRIPT;
-my $HTML_DIR = "$Bin/../.." . $conf->{site}->{html_path};
+my $HTML_DIR = $conf->{site}->{html_dir};
 
 $CGI::POST_MAX = 1024 * 1024 * $conf->{page}->{max_upload_mb};
 # $CGI::DISABLE_UPLOADS = 1;
