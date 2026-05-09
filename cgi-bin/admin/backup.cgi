@@ -105,7 +105,7 @@ sub list {
 sub create {
     my ($q) = @_;
 
-    my $bkp_name = strftime( '%Y%m%d-%H%M%S', localtime );
+    my $bkp_name = $HOST . q{-} . strftime( '%Y%m%d-%H%M%S', localtime );
     my $bkp_dir  = $BACKUP_DIR . q{/} . $bkp_name;
 
     Utils::make_path( path => $bkp_dir );
@@ -229,8 +229,6 @@ sub restore {
     my $ext      = pop @chunks;
     my $bkp_name = join q{.}, @chunks;
     my $bkp_dir  = $BACKUP_DIR . q{/} . $bkp_name;
-
-    Utils::empty_dir( dir => $HTML_DIR );
 
     Utils::copy_dir(
         src_dir => $bkp_dir,
