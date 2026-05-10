@@ -4,6 +4,8 @@ Webpage is a tool for managing small static website on shared hosting.
 No need for database, FTP access, cPanel, Plesk, etc.
 You can edit pages and files via web interface and handle backups in one click.
 
+![screenshot](webpage-screenshot.png)
+
 ## Installation
 
 There is cpanfile for installing dependencies.
