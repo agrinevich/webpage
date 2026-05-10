@@ -16,13 +16,12 @@ You need SSH access (or some other way) to install required Perl modules.
 cpanm --installdeps --local-lib
 ```
 
-Clone github repo to hosting root dir:
-git clone https://github.com/agrinevich/webpage.git
-Set access rights on CGI files to 755.
-Create directory cgi-bin/logs.
-Create directory for backups outside your public HTML dir.
-Create main.conf from main.conf.example and put in cgi-bin dir.
-Create .htaccess from .htaccess.example and put in cgi-bin/admin dir.
+- Clone github repo to hosting root dir: git clone https://github.com/agrinevich/webpage.git
+- Set access rights on CGI files to 755.
+- Create directory cgi-bin/logs.
+- Create directory for backups outside your public HTML dir.
+- Create main.conf from main.conf.example and put in cgi-bin dir.
+- Create .htaccess from .htaccess.example and put in cgi-bin/admin dir.
 
 ## Usage
 
